@@ -1,0 +1,43 @@
+{
+  "name": "redis-registry",
+  "version": "1.0.0",
+  "description": "Service registry for Node.js on top of redis",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "npm install",
+    "check:style": "eslint .",
+    "test": "npm run check:style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koalazak/redis-registry.git"
+  },
+  "devDependencies": {
+    "semistandard": "^9.1.0",
+    "eslint": "^3.8.0",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-config-semistandard": "^7.0.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.1"
+   
+  },
+  "keywords": [
+    "redis",
+    "registry",
+    "microservice",
+    "discovery",
+    "service"
+  ],
+  "author": "koalazak <zak.tux@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koalazak/redis-registry/issues"
+  },
+  "homepage": "https://github.com/koalazak/redis-registry#readme",
+  "dependencies": {
+    "redis": "^2.8.0",
+    "network-address": "0.0.4"
+  }
+}
