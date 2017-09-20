@@ -10,6 +10,8 @@ var sha1 = function (val) {
   return crypto.createHash('sha1').update(val).digest('hex');
 };
 
+var store;
+
 var parseConnectionObject = function (config) {
   if (!config.host) throw new Error('Invalid host.');
 
@@ -27,7 +29,9 @@ var parseConnectionObject = function (config) {
 module.exports = function (opts) {
   opts = parseConnectionObject(opts);
 
-  var store = redis.createClient(opts.redis.port, opts.redis.host, opts.redis.options);
+  if (!store) {
+    store = redis.createClient(opts.redis.port, opts.redis.host, opts.redis.options);
+  }
 
   store.on('error', function (error) {
     console.log(error);
