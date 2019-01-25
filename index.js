@@ -58,7 +58,7 @@ module.exports = function (opts) {
     if (!cb) cb = noop;
 
     service.name = name;
-    service.hostname = service.hostname || address();
+    service.hostname = service.hostname || address(process.env.DEV || "");
     service.host = service.host || (service.port ? service.hostname + ':' + service.port : service.hostname);
     service.url = service.url || (service.protocol || 'http') + '://' + service.host;
 
