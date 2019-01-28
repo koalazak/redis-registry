@@ -46,7 +46,7 @@ Found the following service:
 }
 ```
 
-**Note**: If no hostname is passed to the `join` function, it will pickup the main interface IP as the hostname. If you need to use the IP of a non-primary interface, set the environment variable `DEV` to the name of the device of your choice (`eth1`, `en1`, etc)
+**Note**: If no hostname is passed to the `join` function, it will pickup the main interface IP as the hostname. If you need to use the IP of a non-primary interface, set the environment variable `REGISTRY_INTERFACE` to the name of the device of your choice (`eth1`, `en1`, etc)
 
 ## Full api
 
