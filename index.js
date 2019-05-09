@@ -169,7 +169,7 @@ module.exports = function (opts) {
 
     leave(list, cb || noop);
   };
-  
+
   that.quit = function () {
     store.quit();
   };
