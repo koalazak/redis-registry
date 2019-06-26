@@ -1,6 +1,6 @@
 {
   "name": "redis-registry",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Service registry for Node.js on top of redis",
   "directories": {
     "test": "test"
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "semistandard": "^9.1.0",
-    "eslint": "^3.8.0",
+    "eslint": "^4.18.2",
     "eslint-config-standard": "^6.2.0",
     "eslint-config-semistandard": "^7.0.0",
     "eslint-plugin-promise": "^3.0.0",
