@@ -154,7 +154,7 @@ module.exports = function (opts) {
       next.destroyed = true;
 
       var i = services.indexOf(next);
-      if (i > -1) services.splice(next, 1);
+      if (i > -1) services.splice(i, 1);
 
       store.del(next.key, loop);
     };
